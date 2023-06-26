@@ -67,11 +67,11 @@ public class PostController {
 	 * @apiNote This method is for Get Post By user
 	 * @param userId
 	 * @return
-	 *
+	 *8
 	 *
 	 */
 	@GetMapping("/user/{userId}/posts")
-	
+
 	public ResponseEntity<List<PostDto>> getPostsByUser(@PathVariable Integer userId) {
 		logger.info("Intializing request to UpdatePost Started");
 		List<PostDto> posts = this.postService.getPostByUser(userId);
